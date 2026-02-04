@@ -56,18 +56,13 @@ This project implements a robust **Database Solution** using **MySQL 8.0** to so
 
 ---
 
-## 📊 Workflow Diagram
-
-```mermaid
 graph LR
-    A[👨‍🌾 Farmers] -->|Deliver Coffee| B(🏭 Cooperative)
+    A[Farmers] -->|Deliver Coffee| B(Cooperative)
     B -->|Process & Example| C{Market Sales}
-    C -->|Regional| D[💰 Analyze Revenue]
+    C -->|Regional| D[Analyze Revenue]
     C -->|International| D
-    D -->|SQL Window Functions| E[📈 Insights]
-    E -->|Decisions| F[🏆 Incentives & Planning]
-    style A fill:#f9f,stroke:#333,stroke-width:2px
-    style E fill:#bbf,stroke:#333,stroke-width:2px
+    D -->|SQL Window Functions| E[Insights]
+    E -->|Decisions| F[Incentives & Planning]
 ```
 
 ---
