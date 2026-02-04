@@ -1,22 +1,3 @@
-# Agricultural Cooperative Sales Analysis
-
-> **Case Study**: Rwandaro Coffee Farmers Cooperative
-
-![MySQL](https://img.shields.io/badge/MySQL-8.0-00758F?style=for-the-badge&logo=mysql&logoColor=white)
-![PL/SQL](https://img.shields.io/badge/Language-PL%2FSQL-orange?style=for-the-badge)
-![Status](https://img.shields.io/badge/Status-Completed-success?style=for-the-badge)
-
-## Project Overview
-
-**Rwandaro Coffee Farmers Cooperative** aggregates coffee produce from registered farmers for regional and international markets. Despite having raw data, the cooperative lacks the analytical capability to track farmer performance or seasonal trends efficiently.
-
-This project implements a robust **Database Solution** using **MySQL 8.0** to solve these challenges through:
-
-- **Advanced Join Operations** for data aggregation.
-- **Window Functions** for analytical reporting (Ranking, Moving Averages, Quartiles).
-
----
-
 ## Student Information
 
 | Attribute      | Details                                      |
@@ -25,6 +6,41 @@ This project implements a robust **Database Solution** using **MySQL 8.0** to so
 | **Student ID** | 28279                                        |
 | **Group**      | B                                            |
 | **Course**     | Database Development with PL/SQL (INSY 8311) |
+---
+
+# Agricultural Cooperative Sales Analysis
+
+> **Case Study**: Rwandaro Coffee Farmers Cooperative
+
+![MySQL](https://img.shields.io/badge/MySQL-8.0-00758F?style=for-the-badge&logo=mysql&logoColor=white)
+![PL/SQL](https://img.shields.io/badge/Language-PL%2FSQL-orange?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-Completed-success?style=for-the-badge)
+
+## 1. Business Problem Definition
+
+### 1.1 Business Context
+
+Rwandaro Coffee Farmers Cooperative is an agricultural cooperative operating in Rwanda that aggregates coffee produce from registered farmers and sells it to regional and international markets. The cooperative operates within the agribusiness sector and focuses on improving farmer income through collective production, marketing, and value addition.
+
+### 1.2 Data Challenge
+
+Although the cooperative records farmer deliveries and coffee sales, management lacks analytical insight into farmer performance, seasonal sales trends, and inactive members. Manual reporting limits the ability to evaluate growth patterns, compare farmer contributions, and make informed operational decisions.
+
+### 1.3 Expected Outcome
+
+This analysis aims to identify top-contributing farmers, monitor sales performance over time, segment farmers based on contribution levels, and support data-driven decisions related to incentives, training, and operational planning.
+
+---
+
+## 2. Success Criteria
+
+The project aims to achieve the following measurable objectives:
+
+1. Identify the top-performing farmers per season using ranking window functions such as RANK().
+2. Calculate running monthly sales totals to track cooperative revenue growth using SUM() OVER().
+3. Analyze month-over-month sales changes using navigation functions like LAG().
+4. Segment farmers into four contribution quartiles using NTILE(4).
+5. Compute three-month moving averages of sales revenue to analyze seasonal trends using AVG() OVER().
 
 ---
 
@@ -101,6 +117,7 @@ plsql_window_functions_28279_philbert
 ```
 
 ---
+
 ## Results & Analysis
 
 - **Performance Variation**: Significant disparity found between top-performing farmers and average contributors. ([JOINS.md](sql/JOINS.md))
@@ -118,8 +135,8 @@ plsql_window_functions_28279_philbert
 ## References
 
 1.  [Geeks for Geeks](https://www.geeksforgeeks.org/sql/window-functions-in-sql/) — Window Functions
-2. [MySQL Documentation](https://dev.mysql.com/doc/refman/8.0/en/window-functions-usage.html) — MySQL Window Functions
-3.  [Rwandaro Coffee Farmers Cooperative Official Website](https://rwandarocoffee.com/) 
+2.  [MySQL Documentation](https://dev.mysql.com/doc/refman/8.0/en/window-functions-usage.html) — MySQL Window Functions
+3.  [Rwandaro Coffee Farmers Cooperative Official Website](https://rwandarocoffee.com/)
 4.  INSY 8311 Course Materials
 5.  [ChatGPT](https://chat.openai.com/) (to refine my english)
 
