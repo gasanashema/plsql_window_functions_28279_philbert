@@ -66,8 +66,6 @@ graph LR
     C -->|International| D
     D -->|SQL Window Functions| E[Insights]
     E -->|Decisions| F[Incentives & Planning]
-    style A fill:#f9f,stroke:#333,stroke-width:2px
-    style E fill:#bbf,stroke:#333,stroke-width:2px
 ```
 
 ---
