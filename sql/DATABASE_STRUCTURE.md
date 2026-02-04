@@ -2,9 +2,9 @@
 
 ## Overview
 
-**Database Name**: `rwandaro_cooperative_db`
-**DBMS**: MySQL 8.0
-**Purpose**: Manages agricultural data including farmers, products, deliveries, and sales for the Rwandaro Coffee Farmers Cooperative.
+* **Database Name**: `rwandaro_cooperative_db`
+* **DBMS**: MySQL 8.0
+* **Purpose**: Manages agricultural data including farmers, products, deliveries, and sales for the Rwandaro Coffee Farmers Cooperative.
 
 ---
 
